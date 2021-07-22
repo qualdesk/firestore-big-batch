@@ -1,0 +1,22 @@
+{
+  "name": "@qualdesk/firestore-big-batch",
+  "version": "0.0.1",
+  "description": "A library to work around hard limit for Firestore Batched Writes",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "private": false,
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kat Lynch <kehlynch@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "repository": "github:qualdesk/firestore-big-batch"
+}
