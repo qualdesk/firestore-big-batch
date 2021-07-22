@@ -16,6 +16,7 @@
   "author": "Kat Lynch <kehlynch@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@google-cloud/firestore": "^4.13.2",
     "typescript": "^4.3.5"
   },
   "repository": "github:qualdesk/firestore-big-batch"

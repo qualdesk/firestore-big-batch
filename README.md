@@ -6,7 +6,7 @@ by Firestore.
 ## Usage
 
 ```
-import { BigBatch } from 'firestore-big-batch'
+import { BigBatch } from '@qualdesk/firestore-big-batch'
 
 ```
 
