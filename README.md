@@ -3,6 +3,12 @@
 Easily work with Firestore Batched Writes that are bigger than currently allowed
 by Firestore.
 
+## Announcement article
+
+Read an article explaining how this library works: [The solution to the
+Firestore batched write
+limit](https://www.qualdesk.com/blog/2021/the-solution-to-firestore-batched-write-limit/)
+
 ## Usage
 
 ```
@@ -42,10 +48,10 @@ give all the benefits of a Firestore batch.
 
 ## Todo
 
-* better error handling when batches fail (Promise.all() is not that great)
+* better error handling when batches fail (`Promise.all()` is not that great)
 * see if we can support runTransaction
 * write tests!
 
 ## Contributing
 
-PRs are welcoming, or you can [raise an issue](https://github.com/qualdesk/firestore-big-batch/issues/new)
+PRs are welcome, or you can [raise an issue](https://github.com/qualdesk/firestore-big-batch/issues/new)

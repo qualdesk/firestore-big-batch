@@ -1,6 +1,6 @@
 {
   "name": "@qualdesk/firestore-big-batch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A library to work around hard limit for Firestore Batched Writes",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -19,5 +19,12 @@
     "@google-cloud/firestore": "^4.13.2",
     "typescript": "^4.3.5"
   },
-  "repository": "github:qualdesk/firestore-big-batch"
+  "repository": "github:qualdesk/firestore-big-batch",
+  "keywords": [
+    "firestore",
+    "firebase",
+    "typescript",
+    "batch",
+    "migration"
+  ]
 }
