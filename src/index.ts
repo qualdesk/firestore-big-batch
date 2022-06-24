@@ -18,6 +18,19 @@ export class BigBatch {
     this.batchArray = [this.currentBatch]
     this.operationCounter = 0
   }
+  
+  public create(
+    ref: FirebaseFirestore.DocumentReference,
+    data: object
+  ) {
+    this.currentBatch.create(ref, data)
+    this.operationCounter++
+    if (this.operationCounter === MAX_OPERATIONS_PER_FIRESTORE_BATCH) {
+      this.currentBatch = this.firestore.batch()
+      this.batchArray.push(this.currentBatch)
+      this.operationCounter = 0
+    }
+  }
 
   public set(
     ref: FirebaseFirestore.DocumentReference,
